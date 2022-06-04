@@ -61,13 +61,13 @@
             <legend class="col-form-label col-sm-3 pt-0">Algorithm</legend>
             <div class="col-sm-9">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="algo" id="gridRadios1" value="ml">
-                <label class="form-check-label" for="gridRadios1">
+                <input class="form-check-input" type="radio" name="algo" id="gridRadios1" value="ml" {% if ml %}checked{% endif %}>
+                <label class="form-check-label" for="gridRadios1" >
                   Multiple Linear
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="algo" id="gridRadios2" value="rf">
+                <input class="form-check-input" type="radio" name="algo" id="gridRadios2" value="rf" {% if rf %}checked{% endif %}>
                 <label class="form-check-label" for="gridRadios2">
                   Random Forest
                 </label>
